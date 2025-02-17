@@ -4,10 +4,10 @@
 <!-- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.                   -->
 <!-- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.   -->
 
-<Project Product="Vivado" Version="7" Minor="68" Path="D:/GitHubLocalRepository/WashU/2025SP_CSE462/HardwareAcceleratorVivado/HardwareAcceleratorVivado.xpr">
+<Project Product="Vivado" Version="7" Minor="68" Path="d:/githublocalrepository/washu/2025sp_cse462/hardwareacceleratorvivado/ip_repo/tmp_edit_project.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="9c51b8488ffa4aad85f21e3628e18d7a"/>
+    <Option Name="Id" Val="14a1b911f2bc42c48c2e24673d720b27"/>
     <Option Name="Part" Val="xc7z020clg400-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -49,7 +49,7 @@
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Default"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/ip_repo"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../GitHubLocalRepository/WashU/2025SP_CSE462/HardwareAcceleratorVivado"/>
     <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
     <Option Name="IPDefaultOutputPath" Val="$PGENDIR/sources_1"/>
     <Option Name="IPCachePermission" Val="read"/>
@@ -93,36 +93,28 @@
   <FileSets Version="1" Minor="32">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
       <Filter Type="Srcs"/>
-      <File Path="$PSRCDIR/sources_1/new/conv2d.v">
+      <File Path="$PPRDIR/../../../../../GitHubLocalRepository/WashU/2025SP_CSE462/HardwareAcceleratorVivado/ip_repo/src/conv2d.v">
         <FileInfo>
+          <Attr Name="Library" Val=""/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/bd/design_1/design_1.bd">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/ip_repo/component.xml">
+      <File Path="$PPRDIR/../../../../../GitHubLocalRepository/WashU/2025SP_CSE462/HardwareAcceleratorVivado/ip_repo/component.xml">
         <FileInfo SFType="IPXACT"/>
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="conv2d"/>
-        <Option Name="TopAutoSet" Val="TRUE"/>
+        <Option Name="TopRTLFile" Val="$PPRDIR/../../../../../GitHubLocalRepository/WashU/2025SP_CSE462/HardwareAcceleratorVivado/ip_repo/src/conv2d.v"/>
       </Config>
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
       <Filter Type="Constrs"/>
-      <File Path="$PSRCDIR/constrs_1/imports/pynq-z2_v1.0.xdc/PYNQ-Z2 v1.0.xdc">
+      <File Path="$PPRDIR/../../../../../GitHubLocalRepository/WashU/2025SP_CSE462/HardwareAcceleratorVivado/ip_repo/src/PYNQ-Z2 v1.0.xdc">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../College_University/WashU/2025SP CSE 462 Computer Systems Design/pynq-z2_v1.0.xdc/PYNQ-Z2 v1.0.xdc"/>
-          <Attr Name="ImportTime" Val="1597890555"/>
+          <Attr Name="Library" Val=""/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
         </FileInfo>
@@ -135,7 +127,6 @@
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="conv2d"/>
-        <Option Name="TopLib" Val="xil_defaultlib"/>
         <Option Name="TopAutoSet" Val="TRUE"/>
         <Option Name="TransportPathDelay" Val="0"/>
         <Option Name="TransportIntDelay" Val="0"/>
